@@ -1,0 +1,21 @@
+.sidebar-home-section{
+    height: 100vh;
+    display: flex;
+    background-color:  #CD5C5C;
+}
+
+.sidebar{
+    width: 80px;
+    background-color: rgb(35, 90, 92);
+    height: 100vh;
+    position: fixed;
+}
+.sidebar-expand{
+    width: 250px;
+}
+
+.container-fluid{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    overflow: hidden;
+  }
