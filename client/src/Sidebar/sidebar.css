@@ -6,12 +6,46 @@
 
 .sidebar{
     width: 80px;
-    background-color: rgb(35, 90, 92);
+    background-color: #38004C;
     height: 100vh;
     position: fixed;
 }
 .sidebar-expand{
     width: 250px;
+    transition-duration: 2s;
+}
+
+
+.icon-for-sidebar-expand {
+ 
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    cursor: pointer;
+    
+    
+}
+
+.icon-for-sidebar-expand p svg{
+    background-color: #f3de22;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.navbar-items ul li{
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+.navbar-items ul li a{
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
 }
 
 .container-fluid{
