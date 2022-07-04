@@ -47,7 +47,9 @@ const Home = () => {
             distribution of letters, as opposed to using 'Content here, content
             here', making it look like readable English.
           </p>
-          <span className="view-details-home-button">View Details</span>
+          <span className="view-details-home-button">
+           View Details
+           </span>
         </div>
       </Fade>
     </div>

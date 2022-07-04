@@ -1,6 +1,6 @@
 import React from "react";
 import "./sidebarlist.css";
-import { FcNightPortrait, FcHome } from "react-icons/fc";
+import { FcNightPortrait, FcHome, FcMindMap,FcContacts } from "react-icons/fc";
 import { Link } from "react-scroll";
 
 const SidebarList = ({ expandSidebar }) => {
@@ -35,16 +35,57 @@ const SidebarList = ({ expandSidebar }) => {
             
                   <FcNightPortrait size={25} />
                   About
-           
-
-                {/* <div className="each-nav-items">
-                  <p>
-                    <FcNightPortrait size={25} />
-                  </p>
-                  <p>About</p>
-                </div> */}
+        
               </Link>
             </li>
+
+            <li className="nav-item">
+              <Link
+                to="techstack"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+            
+                  <FcMindMap size={25} />
+                  Tech Stack
+        
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                to="tools"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+            
+                  <FcMindMap size={25} />
+                  Tools
+        
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+            
+                  <FcContacts size={25} />
+                  Contact
+        
+              </Link>
+            </li>
+
+
+
           </ul>
         </div>
       ) : (
@@ -73,6 +114,46 @@ const SidebarList = ({ expandSidebar }) => {
                 <FcNightPortrait size={25} />
               </Link>
             </li>
+
+            <li className="nav-item">
+              <Link
+                to="techstack"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcMindMap size={25} />
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                to="tools"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcMindMap size={25} />
+              </Link>
+            </li>
+
+
+            <li className="nav-item">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcContacts size={25} />
+              </Link>
+            </li>
+
+
+
           </ul>
         </div>
       )}

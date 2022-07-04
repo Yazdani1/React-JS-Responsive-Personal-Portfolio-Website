@@ -29,6 +29,8 @@
 .navbar-items-only-icons ul li {
     margin-top: 30px;
     cursor: pointer;
+    list-style-type: none;
+
 }
 
 

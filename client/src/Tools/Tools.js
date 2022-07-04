@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import "./TechStack.css";
+import "./Tools.css";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
-const TechStack = () => {
+import ToolList from "../tools.json";
+
+const Tools = () => {
   const data = [
     {
       content:
@@ -76,107 +78,35 @@ const TechStack = () => {
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 9,
     },
-    {
-      content:
-        "It is not every day that you come across a passionate and trustworthy financial advisor",
-      name: "Daniel",
-      position: "Nuxt js developer",
-      img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      id: 10,
-    },
-    {
-      content:
-        "It is not every day that you come across a passionate and trustworthy financial advisor",
-      name: "Anthony",
-      position: "Nuxt js developer",
-      img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      id: 11,
-    },
-    {
-      content:
-        "It is not every day that you come across a passionate and trustworthy financial advisor",
-      name: "Aiden",
-      position: "Nuxt js developer",
-      img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      id: 12,
-    },
-    {
-      content:
-        "It is not every day that you come across a passionate and trustworthy financial advisor",
-      name: "Aiden",
-      position: "Nuxt js developer",
-      img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      id: 12,
-    },
-    {
-      content:
-        "It is not every day that you come across a passionate and trustworthy financial advisor",
-      name: "Aiden",
-      position: "Nuxt js developer",
-      img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      id: 12,
-    },
-    {
-      content:
-        "It is not every day that you come across a passionate and trustworthy financial advisor",
-      name: "Aiden",
-      position: "Nuxt js developer",
-      img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      id: 12,
-    },
-    {
-      content:
-        "It is not every day that you come across a passionate and trustworthy financial advisor",
-      name: "Aiden",
-      position: "Nuxt js developer",
-      img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      id: 12,
-    },
-    {
-      content:
-        "It is not every day that you come across a passionate and trustworthy financial advisor",
-      name: "Aiden",
-      position: "Nuxt js developer",
-      img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      id: 12,
-    },
+
+ 
   ];
 
-  const [visible, setVisible] = useState(9);
-
-  const loadMore = () => {
-    setVisible((prev) => prev + 3);
-  };
 
   return (
-    <div className="container testimonial-section" id="techstack">
+    <div className="container testimonial-section" id="tools">
       <div className="testimonial">
         <Flip left>
-          <h5>Programming Language and Framework</h5>
+          <h5>Tools I Use</h5>
           <span className="line"></span>
         </Flip>
       </div>
       <div className="row">
-        {data.slice(0, visible).map((item, index) => (
+        {ToolList && ToolList.map((item, index) => (
           <Fade right>
             <div className="col-lg-4 col-md-6 col-xl-4" key={item.id}>
               <div className={index === 0 ? "content-with-marked" : "content"}>
                 <img src={item.img} alt="image" className="center-image" />
 
-                <p>{item.position}</p>
+                <p>{item.name}</p>
               </div>
             </div>
           </Fade>
         ))}
 
-        {visible >= data.length ? null : (
-          <div className="load-more-button" onClick={loadMore}>
-            Load More
-          </div>
-        )}
       </div>
     </div>
   );
 };
 
-export default TechStack;
+export default Tools;
