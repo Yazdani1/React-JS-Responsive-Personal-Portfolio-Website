@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./sidebar.css";
-import { FcNext, FcPrevious } from "react-icons/fc";
 import Home from "../Home/Home";
 import SidebarList from "./SidebarList";
-
+import { BsChevronLeft,BsChevronRight } from "react-icons/bs";
 const Navbar = () => {
   const [expandSidebar, setExpandSidebar] = useState(true);
 
@@ -20,7 +19,7 @@ const Navbar = () => {
       >
         <div className="icon-for-sidebar-expand">
           <p onClick={handleClick}>
-            {expandSidebar ? <FcPrevious size={30} /> : <FcNext size={30} />}
+            {expandSidebar ? <BsChevronLeft size={30} /> : <BsChevronRight size={30} />}
           </p>
         </div>
 

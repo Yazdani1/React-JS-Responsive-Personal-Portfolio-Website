@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar/Sidebar";
 import About from "./About/About";
+import TechStack from "./TechStack/TechStack";
 import "./App.css";
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <div>
       <Sidebar />
       <About/>
+      <TechStack/>
     </div>
   );
 };

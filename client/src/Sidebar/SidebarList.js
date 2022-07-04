@@ -17,12 +17,10 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-                <div className="each-nav-items">
-                  <p>
-                    <FcHome size={25} />
-                  </p>
-                  <p>Home</p>
-                </div>
+          
+                  <FcHome size={25} />
+                  Home
+            
               </Link>
             </li>
 
@@ -34,12 +32,17 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-                <div className="each-nav-items">
+            
+                  <FcNightPortrait size={25} />
+                  About
+           
+
+                {/* <div className="each-nav-items">
                   <p>
                     <FcNightPortrait size={25} />
                   </p>
                   <p>About</p>
-                </div>
+                </div> */}
               </Link>
             </li>
           </ul>
@@ -58,10 +61,17 @@ const SidebarList = ({ expandSidebar }) => {
                 <FcHome size={25} />
               </Link>
             </li>
-            <li>
-              <a href="#about">
+
+            <li className="nav-item">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
                 <FcNightPortrait size={25} />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
