@@ -1,5 +1,4 @@
 .sidebar-home-section{
-    height: 100vh;
     display: flex;
     background-color:  #CD5C5C;
 }
@@ -9,10 +8,10 @@
     background-color: #38004C;
     height: 100vh;
     position: fixed;
+
 }
 .sidebar-expand{
     width: 250px;
-    transition-duration: 2s;
 }
 
 
@@ -22,7 +21,6 @@
     align-items: right;
     justify-content: right;
     cursor: pointer;
-    
     
 }
 
@@ -34,19 +32,7 @@
     margin-top: 50px;
 }
 
-.navbar-items ul li{
-    color: white;
-    list-style-type: none;
-    cursor: pointer;
-    margin-top: 15px;
 
-}
-
-.navbar-items ul li a{
-    text-decoration: none;
-    color: white;
-    margin-top: 15px;
-}
 
 .container-fluid{
     padding-left: 0px!important;
