@@ -1,6 +1,12 @@
 import React from "react";
 import "./sidebarlist.css";
-import { FcNightPortrait, FcHome, FcMindMap,FcContacts } from "react-icons/fc";
+import { FcNightPortrait, FcHome, FcMindMap,FcContacts,FcFlowChart } from "react-icons/fc";
+import { MdBiotech} from "react-icons/md";
+import { FiSlack} from "react-icons/fi";
+
+
+
+
 import { Link } from "react-scroll";
 
 const SidebarList = ({ expandSidebar }) => {
@@ -48,7 +54,7 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
               >
             
-                  <FcMindMap size={25} />
+                  <MdBiotech size={25} />
                   Tech Stack
         
               </Link>
@@ -63,7 +69,7 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
               >
             
-                  <FcMindMap size={25} />
+                  <FcFlowChart size={25} />
                   Tools
         
               </Link>
@@ -123,7 +129,7 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-                <FcMindMap size={25} />
+                <MdBiotech size={25} color="orange"/>
               </Link>
             </li>
 
@@ -135,7 +141,7 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-                <FcMindMap size={25} />
+                <FcFlowChart size={25} color="white"/>
               </Link>
             </li>
 
