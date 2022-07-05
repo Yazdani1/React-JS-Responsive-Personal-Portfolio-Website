@@ -1,5 +1,6 @@
 import React from 'react';
 import "./projects.css";
+import ProjectList from './ProjectList';
 
 const Projects = () => {
 
@@ -61,7 +62,15 @@ const Projects = () => {
     ]
 
   return (
-    <div>Projects</div>
+    <div className='container'>
+        <div className='row'>
+            {projectList.map((item,index)=>(
+                <div className='col-xl-6, col-lg-6, col-md-12, col-sm-12'>
+                    <ProjectList key={index} {...item} index={index}/>
+                </div>
+            ))}
+        </div>
+    </div>
   )
 }
 
