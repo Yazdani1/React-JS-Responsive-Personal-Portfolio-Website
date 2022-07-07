@@ -98,7 +98,7 @@ const Feedback = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     adaptiveHeight: true,
     initialSlide: 0,
     autoplay: true,

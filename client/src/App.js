@@ -5,6 +5,7 @@ import TechStack from "./TechStack/TechStack";
 import Tools from "./Tools/Tools";
 import Contact from "./Contact/Contact";
 import Feedback from "./Feedback/Feedback";
+import Projects from "./Projects/Projects";
 import "./App.css";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Sidebar />
       <About/>
       <TechStack/>
+      <Projects/>
       <Tools/>
       <Contact/>
       <Feedback/>
