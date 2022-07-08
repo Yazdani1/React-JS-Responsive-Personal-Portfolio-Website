@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./projects.css";
-import { FcExpand,FcCollapse } from "react-icons/fc";
+import { FcExpand, FcCollapse } from "react-icons/fc";
 const ProjectList = ({
   name,
   des,
@@ -17,7 +17,9 @@ const ProjectList = ({
     <div className="project-list">
       <div className="title-with-dropdown">
         <h5>{name}</h5>
-        <p><FcExpand size={20}/></p>
+        <p>
+          <FcExpand size={20} />
+        </p>
       </div>
 
       <div className="tech-stack">
@@ -34,7 +36,7 @@ const ProjectList = ({
           </a>{" "}
         </p>
       </div>
-      <p className="description">{des}</p>
+      {show ? <p className="description">{des}</p> : null}
     </div>
   );
 };

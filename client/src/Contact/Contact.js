@@ -8,6 +8,12 @@ const Contact = () => {
 
   return (
     <div className="container contact-section" id="contact">
+        <div className="section-title">
+        <Flip left>
+          <h5>Contact</h5>
+          <span className="line"></span>
+        </Flip>
+      </div>
       <div className="row">
         <Fade left>
           <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5">

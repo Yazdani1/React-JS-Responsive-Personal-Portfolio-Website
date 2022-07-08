@@ -149,8 +149,8 @@ const TechStack = () => {
   };
 
   return (
-    <div className="container testimonial-section" id="techstack">
-      <div className="testimonial">
+    <div className="container techstack-section" id="techstack">
+      <div className="section-title">
         <Flip left>
           <h5>Tech Stack</h5>
           <span className="line"></span>

@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Fade from "react-reveal/Fade";
-
+import Flip from "react-reveal/Flip";
 const Feedback = () => {
   const data = [
     {
@@ -134,9 +134,11 @@ const Feedback = () => {
 
   return (
     <div className="container feedback-slider" id="feedback">
-      <div className="section_title">
-        <h5>Feedback</h5>
-        <span className="line"></span>
+     <div className="section-title">
+        <Flip left>
+          <h5>Testimonial</h5>
+          <span className="line"></span>
+        </Flip>
       </div>
 
       <div className="feedbck-slide">

@@ -3,15 +3,15 @@
     color: black;
   }
   
-  .testimonial-section {
+  .techstack-section {
     /* height: 900px; */
     height: auto;
   }
-  #dark .testimonial-section {
+  #dark .techstack-section {
     color: white;
   }
   
-  .testimonial h5 {
+  .section-title h5 {
     text-align: center;
   }
   
