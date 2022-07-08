@@ -152,7 +152,7 @@ const TechStack = () => {
     <div className="container testimonial-section" id="techstack">
       <div className="testimonial">
         <Flip left>
-          <h5>Programming Language and Framework</h5>
+          <h5>Tech Stack</h5>
           <span className="line"></span>
         </Flip>
       </div>

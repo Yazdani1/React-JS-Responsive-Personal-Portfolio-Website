@@ -15,7 +15,6 @@ const App = () => {
       <About/>
       <TechStack/>
       <Projects/>
-      <Tools/>
       <Contact/>
       <Feedback/>
     </div>
