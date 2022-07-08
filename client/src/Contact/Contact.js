@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./contact.css";
 import { IoIosSend } from "react-icons/io";
 import Fade from "react-reveal/Fade";
-
+import Flip from "react-reveal/Flip";
 const Contact = () => {
 
 

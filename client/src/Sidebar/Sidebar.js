@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container-fluid sidebar-home-section">
+    <div className="container-fluid sidebar-section">
       <div
         className={expandSidebar ? "sidebar-expand sidebar" : "sidebar"}
         // onMouseLeave={() => setExpandSidebar(false)}
@@ -25,7 +25,7 @@ const Navbar = () => {
 
         <SidebarList expandSidebar={expandSidebar}/>
       </div>
-      <div className="container home-content">
+      <div className="container">
         <Home />
       </div>
     </div>

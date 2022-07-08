@@ -5,10 +5,11 @@ import Fade from "react-reveal/Fade";
 import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 const Home = () => {
+
   return (
-    <div className="container-fluid home" id="home">
-        
-      {/* <div className="theme-change" onClick={() => handleChangeTheme()}>
+    <>
+      <div className="container-fluid home" id="home">
+        {/* <div className="theme-change" onClick={() => handleChangeTheme()}>
         {theme === "light" ? (
           <p>
             <BsMoonStarsFill size={40} />
@@ -20,39 +21,33 @@ const Home = () => {
         )}
       </div> */}
 
-      <Fade left>
-        <div className="container home-content">
-          <h1>
-            <Typewriter
-              options={{
-                strings: [
-                  "Web Development",
-                  "Mobile App Development",
-                  "UI/UX Design",
-                  "Product Marketing",
-                  "Digital Marketing",
-                  "Customer Service",
-                ],
-                autoStart: true,
-                loop: true,
-                delay: 5,
-              }}
-            />
-          </h1>
+        <Fade left>
+          <div className="container home-content">
+            
+            <h1>Hi I'm</h1>
+            <h2>
+              <Typewriter
+                options={{
+                  strings: [
+                    "Web Development",
+                    "Mobile App Development",
+                    "UI/UX Design",
+                    "Product Marketing",
+                    "Digital Marketing",
+                    "Customer Service",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 5,
+                }}
+              />
+            </h2>
 
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
-          </p>
-          <span className="view-details-home-button">
-           View Details
-           </span>
-        </div>
-      </Fade>
-    </div>
+            <span className="view-details-home-button">View Details</span>
+          </div>
+        </Fade>
+      </div>
+    </>
   );
 };
 
