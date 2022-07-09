@@ -28,6 +28,15 @@
     margin-left: 5px;
 }
 
+.tech-stack span:hover{
+
+    background-color: brown;
+    color: white;
+    transition-duration: 1s;
+
+}
+
+
 
 .live-demo-button{
     margin-top: 20px;
@@ -38,6 +47,14 @@
     margin-left: 5px;
 
 }
+
+.live-demo-button:hover{
+    background-color: orangered;
+    color: white;
+    transition-duration: 1s;
+
+}
+
 
 .live-demo-button p a{
   color: white;
