@@ -23,7 +23,7 @@ const ProjectList = ({
 
   return (
     <div className="project-list" onClick={handleClick} 
-    // onMouseLeave={() => setShow(false)}
+    onMouseLeave={() => setShow(false)}
     onMouseEnter={() => setShow(true)}>
       <div className="title-with-dropdown">
         <h5>{name}</h5>

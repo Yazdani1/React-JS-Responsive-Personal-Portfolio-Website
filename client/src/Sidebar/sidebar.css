@@ -1,13 +1,15 @@
 .sidebar-section{
     display: flex;
-    background-color:  #cd5c5cda;
+    /* background-color:  #cd5c5cda; */
+    background-color: #030303da;
 }
 
 .sidebar{
     width: 95px;
-    background-color: #38004C;
+    /* background-color: #38004C; */
     height: 100vh;
     position: fixed;
+    background-color: #030303da;
 
 
 }
