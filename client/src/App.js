@@ -15,8 +15,10 @@ const App = () => {
       <About/>
       <TechStack/>
       <Projects/>
-      <Contact/>
       <Feedback/>
+
+      <Contact/>
+
     </div>
   );
 };

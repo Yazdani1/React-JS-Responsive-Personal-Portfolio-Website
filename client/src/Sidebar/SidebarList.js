@@ -1,11 +1,15 @@
 import React from "react";
 import "./sidebarlist.css";
-import { FcNightPortrait, FcHome, FcTodoList,FcContacts,FcFlowChart,FcSalesPerformance } from "react-icons/fc";
-import { MdBiotech} from "react-icons/md";
-import { FiSlack} from "react-icons/fi";
-
-
-
+import {
+  FcNightPortrait,
+  FcHome,
+  FcTodoList,
+  FcContacts,
+  FcFlowChart,
+  FcSalesPerformance,
+} from "react-icons/fc";
+import { MdBiotech } from "react-icons/md";
+import { FiSlack } from "react-icons/fi";
 
 import { Link } from "react-scroll";
 
@@ -14,6 +18,13 @@ const SidebarList = ({ expandSidebar }) => {
     <>
       {expandSidebar ? (
         <div className="navbar-items">
+          <div className="sidebar-profile-pic">
+            <img
+              src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="about_image"
+            />
+          </div>
+
           <ul>
             <li className="nav-item">
               <Link
@@ -23,10 +34,8 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-          
-                  <FcHome size={25} />
-                  Home
-            
+                <FcHome size={25} />
+                Home
               </Link>
             </li>
 
@@ -38,10 +47,8 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-            
-                  <FcNightPortrait size={25} />
-                  About
-        
+                <FcNightPortrait size={25} />
+                About
               </Link>
             </li>
 
@@ -53,10 +60,8 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-            
-                  <MdBiotech size={25} />
-                  Tech Stack
-        
+                <MdBiotech size={25} />
+                Tech Stack
               </Link>
             </li>
 
@@ -68,26 +73,21 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-            
-                  <FcTodoList size={25} />
-                  Projects
-        
+                <FcTodoList size={25} />
+                Projects
               </Link>
             </li>
 
-
             <li className="nav-item">
               <Link
-                to="feedback"
+                to="testimonial"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={100}
               >
-            
-                  <FcSalesPerformance size={25} />
-                  Testimonial
-        
+                <FcSalesPerformance size={25} />
+                Testimonial
               </Link>
             </li>
 
@@ -99,15 +99,10 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-            
-                  <FcContacts size={25} />
-                  Contact
-        
+                <FcContacts size={25} />
+                Contact
               </Link>
             </li>
-
-
-
           </ul>
         </div>
       ) : (
@@ -145,7 +140,7 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-                <MdBiotech size={25} color="orange"/>
+                <MdBiotech size={25} color="orange" />
               </Link>
             </li>
 
@@ -157,28 +152,21 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-            
-                  <FcTodoList size={25}/>
-                
+                <FcTodoList size={25} />
               </Link>
             </li>
 
             <li className="nav-item">
               <Link
-                to="feedback"
+                to="testimonial"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={100}
               >
-            
-                  <FcSalesPerformance size={25} />
-                  
-        
+                <FcSalesPerformance size={25} />
               </Link>
             </li>
-
-
 
             <li className="nav-item">
               <Link
@@ -191,9 +179,6 @@ const SidebarList = ({ expandSidebar }) => {
                 <FcContacts size={25} />
               </Link>
             </li>
-
-
-
           </ul>
         </div>
       )}

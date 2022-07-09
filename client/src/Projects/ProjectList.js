@@ -15,34 +15,37 @@ const ProjectList = ({
 }) => {
   const [show, setShow] = useState(false);
 
-  
+  const handleClick = () => {
+    setShow(!show);
+
+
+  };
 
   return (
-  
-      <div className="project-list">
-        <div className="title-with-dropdown">
-          <h5>{name}</h5>
-          <p>
-            <FcExpand size={20} />
-          </p>
-        </div>
-
-        <div className="tech-stack">
-          <span>{tech1}</span>
-          <span>{tech2}</span>
-          <span>{tech3}</span>
-          <span>{tech4}</span>
-        </div>
-
-        <div className="live-demo-button">
-          <p>
-            <a target="_" href={projectlink}>
-              Live Demo
-            </a>{" "}
-          </p>
-        </div>
-        {show ? <p className="description">{des}</p> : null}
+    <div className="project-list" onClick={handleClick} 
+    // onMouseLeave={() => setShow(false)}
+    onMouseEnter={() => setShow(true)}>
+      <div className="title-with-dropdown">
+        <h5>{name}</h5>
+        <p>{show ? <FcCollapse size={20} /> : <FcExpand size={20} />}</p>
       </div>
+
+      <div className="tech-stack">
+        <span>{tech1}</span>
+        <span>{tech2}</span>
+        <span>{tech3}</span>
+        <span>{tech4}</span>
+      </div>
+
+      <div className="live-demo-button">
+        <p>
+          <a target="_" href={projectlink}>
+            Live Demo
+          </a>{" "}
+        </p>
+      </div>
+      {show ? <p className="description">{des}</p> : null}
+    </div>
   );
 };
 
