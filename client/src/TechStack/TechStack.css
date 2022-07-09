@@ -23,7 +23,7 @@
     background-color: rgb(122, 122, 23);
   }
   
-  .content {
+  .tech-content {
     padding: 10px;
     color: black;
     margin-top: 50px;
@@ -33,12 +33,12 @@
     -moz-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
   }
 
-  .content p{
+  .tech-content p{
     text-align: center;
     padding-top: 30px;
   }
   
-  #dark .content {
+  #dark .tech-content {
     color: white;
     background-color: #38004c;
     box-shadow: none;
@@ -48,29 +48,19 @@
     -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   }
   
-  .content img.center-image {
-    height: 80px;
-  width: 80px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 90px;
-  margin-top: -30px;
-  object-fit: cover;
-  border: 3px solid rgb(244, 244, 8);
-  }
   
-  .content:hover {
+  .tech-content:hover {
     box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   
     cursor: pointer;
     transition-duration: 1s;
-    background-color: brown;
+    background-color: green;
     color: white;
   }
   
-  #dark .content:hover {
+  #dark .tech-content:hover {
     box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
@@ -80,46 +70,36 @@
     background-color: black;
     color: white;
   }
-  .content-with-marked {
+  .tech-content-with-marked {
     padding: 10px;
     color: white;
     margin-top: 50px;
     background-color: brown;
   }
   
-  .content-with-marked p {
+  .tech-content-with-marked p {
     text-align: center;
     padding-top: 30px;
   }
 
-  #dark .content-with-marked {
+  #dark .tech-content-with-marked {
     padding: 10px;
     color: white;
     margin-top: 50px;
     background-color: black;
   }
   
-  .content-with-marked:hover {
+  .tech-content-with-marked:hover {
     box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   
     cursor: pointer;
     transition-duration: 1s;
-    background-color: brown;
+    background-color: rgb(222, 206, 24);
     color: white;
   }
   
-  .content-with-marked img.center-image {
-    height: 80px;
-    width: 80px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 90px;
-    margin-top: -30px;
-    object-fit: cover;
-    border: 3px solid white;
-  }
   
   .load-more-button {
     text-align: center;
@@ -148,3 +128,17 @@
     }
   }
   
+  .service-number {
+    border-radius: 90px;
+    /* background-color: blue; */
+    height: 50px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: -30px;
+    line-height: 50px;
+  }

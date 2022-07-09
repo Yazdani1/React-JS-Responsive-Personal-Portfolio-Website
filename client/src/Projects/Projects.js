@@ -62,7 +62,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container" id="project">
       <div className="section-title">
         <Flip left>
           <h5>Projects</h5>
@@ -71,9 +71,11 @@ const Projects = () => {
       </div>
       <div className="row">
         {projectList.map((item, index) => (
-          <div className="col-xl-6, col-lg-6, col-md-6, col-sm-6">
-            <ProjectList key={index} {...item} index={index} />
-          </div>
+          <Fade right>
+            <div className="col-xl-6, col-lg-6, col-md-6, col-sm-6">
+              <ProjectList key={index} {...item} index={index} />
+            </div>
+          </Fade>
         ))}
       </div>
     </div>

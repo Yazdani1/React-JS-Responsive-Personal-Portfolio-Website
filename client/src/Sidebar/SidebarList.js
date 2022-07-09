@@ -1,6 +1,6 @@
 import React from "react";
 import "./sidebarlist.css";
-import { FcNightPortrait, FcHome, FcMindMap,FcContacts,FcFlowChart } from "react-icons/fc";
+import { FcNightPortrait, FcHome, FcTodoList,FcContacts,FcFlowChart } from "react-icons/fc";
 import { MdBiotech} from "react-icons/md";
 import { FiSlack} from "react-icons/fi";
 
@@ -62,15 +62,15 @@ const SidebarList = ({ expandSidebar }) => {
 
             <li className="nav-item">
               <Link
-                to="tools"
+                to="project"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={100}
               >
             
-                  <FcFlowChart size={25} />
-                  Tools
+                  <FcTodoList size={25} />
+                  Projects
         
               </Link>
             </li>
@@ -135,13 +135,15 @@ const SidebarList = ({ expandSidebar }) => {
 
             <li className="nav-item">
               <Link
-                to="tools"
+                to="project"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={100}
               >
-                <FcFlowChart size={25} color="white"/>
+            
+                  <FcTodoList size={25}/>
+                
               </Link>
             </li>
 

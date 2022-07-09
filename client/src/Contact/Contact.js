@@ -4,18 +4,10 @@ import { IoIosSend } from "react-icons/io";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
 const Contact = () => {
-
-
   return (
     <div className="container contact-section" id="contact">
-        <div className="section-title">
-        <Flip left>
-          <h5>Contact</h5>
-          <span className="line"></span>
-        </Flip>
-      </div>
       <div className="row">
-        <Fade left>
+        <Fade bottom>
           <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5">
             <div className="image-class">
               <img src="https://images.pexels.com/photos/326519/pexels-photo-326519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
@@ -32,28 +24,17 @@ const Contact = () => {
               <form>
                 <div className="contact-form">
                   <label className="form-lebel">Name</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                  
-                  />
+                  <input type="text" className="form-control" />
                 </div>
 
                 <div className="contact-form">
                   <label className="form-lebel">E-mail</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                  
-                  />
+                  <input type="text" className="form-control" />
                 </div>
 
                 <div className="contact-form">
                   <label className="form-lebel">Service you need</label>
-                  <select
-                    className="custom-select"
-            
-                  >
+                  <select className="custom-select">
                     <option>Web Development</option>
                     <option>Mobile App Development</option>
 
@@ -70,7 +51,6 @@ const Contact = () => {
                     maxLength="500"
                     className="form-control"
                     rows="4"
-                
                   />
                 </div>
 
@@ -84,7 +64,6 @@ const Contact = () => {
           </div>
         </Fade>
       </div>
-
     </div>
   );
 };

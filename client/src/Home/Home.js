@@ -3,9 +3,9 @@ import "./home.css";
 import Typewriter from "typewriter-effect";
 import Fade from "react-reveal/Fade";
 import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Home = () => {
-
   return (
     <>
       <div className="container-fluid home" id="home">
@@ -23,7 +23,6 @@ const Home = () => {
 
         <Fade left>
           <div className="container home-content">
-            
             <h1>Hi I'm</h1>
             <h2>
               <Typewriter
@@ -43,7 +42,17 @@ const Home = () => {
               />
             </h2>
 
-            <span className="view-details-home-button">View Details</span>
+            <span className="view-details-home-button">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                Hire me
+              </Link>
+            </span>
           </div>
         </Fade>
       </div>

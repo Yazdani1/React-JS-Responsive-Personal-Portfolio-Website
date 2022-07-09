@@ -148,6 +148,25 @@ const TechStack = () => {
     setVisible((prev) => prev + 3);
   };
 
+  const colors = [
+    "#0088FE",
+    "#00C49F",
+    "#FFBB28",
+    "#FF8042",
+    "#001CCE",
+    "#00C79F",
+    "#FFBB24",
+    "#FF1042",
+    "#0088FE",
+    "#00C49F",
+    "#FFBB28",
+    "#FF8042",
+    "#001CCE",
+    "#00C79F",
+    "#FFBB24",
+    "#FF1042",
+    "#FF1042",
+  ];
   return (
     <div className="container techstack-section" id="techstack">
       <div className="section-title">
@@ -160,8 +179,13 @@ const TechStack = () => {
         {data.slice(0, visible).map((item, index) => (
           <Fade right>
             <div className="col-lg-4 col-md-6 col-xl-4" key={item.id}>
-              <div className={index === 0 ? "content-with-marked" : "content"}>
-                <img src={item.img} alt="image" className="center-image" />
+              <div className={index === 0 ? "tech-content-with-marked" : "tech-content"}>
+                <span
+                  className="service-number"
+                  style={{ backgroundColor: colors[index] }}
+                >
+                 {index + 1}
+                </span>
 
                 <p>{item.position}</p>
               </div>
