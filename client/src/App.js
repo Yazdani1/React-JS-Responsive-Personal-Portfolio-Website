@@ -9,6 +9,7 @@ import Projects from "./Projects/Projects";
 import NavbarMobile from "./Sidebar/NavbarMobile";
 import "./App.css";
 import ScrollToTop from "react-scroll-to-top";
+import WorkExperience from "./WorkExperience/WorkExperience";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <NavbarMobile />
       <Sidebar />
       <About />
+      <WorkExperience />
       <TechStack />
       <Projects />
       <Feedback />
@@ -27,7 +29,7 @@ const App = () => {
         color="white"
         height="20"
         width="20"
-        style={{ borderRadius: "90px", backgroundColor: "#38004c", }}
+        style={{ borderRadius: "90px", backgroundColor: "#38004c" }}
       />
     </div>
   );
