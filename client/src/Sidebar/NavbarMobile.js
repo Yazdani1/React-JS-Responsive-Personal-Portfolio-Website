@@ -8,11 +8,12 @@ import {
   FcHome,
   FcTodoList,
   FcContacts,
-  FcFlowChart,
+  FcFactory,
   FcSalesPerformance,
 } from "react-icons/fc";
 import { MdBiotech } from "react-icons/md";
 import { FiSlack } from "react-icons/fi";
+import { MdCastForEducation } from "react-icons/md";
 
 const NavbarMobile = ({ toggleTheme, theme }) => {
   const [open, setOpen] = useState(false);
@@ -59,6 +60,20 @@ const NavbarMobile = ({ toggleTheme, theme }) => {
               </Link>
             </li>
 
+            
+            <li className="nav-item">
+              <Link
+                to="workexperience"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcFactory size={25} />
+                Work Experience
+              </Link>
+            </li>
+
             <li className="nav-item-mobile">
               <Link
                 to="techstack"
@@ -69,6 +84,20 @@ const NavbarMobile = ({ toggleTheme, theme }) => {
               >
                 <MdBiotech size={25} />
                 Tech Stack
+              </Link>
+            </li>
+
+
+            <li className="nav-item-mobile">
+              <Link
+                to="education"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <MdCastForEducation size={25} color="yellow"/>
+                Education
               </Link>
             </li>
 

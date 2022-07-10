@@ -1,23 +1,22 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./sidebarlist.css";
 import {
   FcNightPortrait,
   FcHome,
   FcTodoList,
   FcContacts,
-  FcFlowChart,
+  FcFactory,
   FcSalesPerformance,
 } from "react-icons/fc";
 import { MdBiotech } from "react-icons/md";
 import { FiSlack } from "react-icons/fi";
 import { Link } from "react-scroll";
 
+import { MdCastForEducation } from "react-icons/md";
+
 const SidebarList = ({ expandSidebar }) => {
-
-
   return (
-    <div>       
-
+    <div>
       {expandSidebar ? (
         <div className="navbar-items">
           <div className="sidebar-profile-pic">
@@ -56,6 +55,19 @@ const SidebarList = ({ expandSidebar }) => {
 
             <li className="nav-item">
               <Link
+                to="workexperience"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcFactory size={25} />
+                Work Experience
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
                 to="techstack"
                 spy={true}
                 smooth={true}
@@ -64,6 +76,20 @@ const SidebarList = ({ expandSidebar }) => {
               >
                 <MdBiotech size={25} />
                 Tech Stack
+              </Link>
+            </li>
+
+
+            <li className="nav-item">
+              <Link
+                to="education"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <MdCastForEducation size={25} color="yellow"/>
+                Education
               </Link>
             </li>
 
@@ -110,7 +136,6 @@ const SidebarList = ({ expandSidebar }) => {
       ) : (
         <div className="navbar-items-only-icons">
           <ul>
-
             <li className="nav-item">
               <Link
                 to="home"
@@ -137,6 +162,18 @@ const SidebarList = ({ expandSidebar }) => {
 
             <li className="nav-item">
               <Link
+                to="workexperience"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcFactory size={25} color="orange" />
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
                 to="techstack"
                 spy={true}
                 smooth={true}
@@ -144,6 +181,19 @@ const SidebarList = ({ expandSidebar }) => {
                 duration={100}
               >
                 <MdBiotech size={25} color="orange" />
+              </Link>
+            </li>
+
+
+            <li className="nav-item">
+              <Link
+                to="education"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <MdCastForEducation size={25} color="yellow"/>
               </Link>
             </li>
 
@@ -171,7 +221,7 @@ const SidebarList = ({ expandSidebar }) => {
               </Link>
             </li>
 
-            <li className="nav-item" >
+            <li className="nav-item">
               <Link
                 to="contact"
                 spy={true}
@@ -185,7 +235,6 @@ const SidebarList = ({ expandSidebar }) => {
           </ul>
         </div>
       )}
-
     </div>
   );
 };

@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import "./WorkExperience.css";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
-import {
-  FcNightPortrait,
-  FcHome,
-  FcTodoList,
-  FcContacts,
-  FcFlowChart,
-  FcSalesPerformance,
-} from "react-icons/fc";
+import { FcNightPortrait } from "react-icons/fc";
+
+import { GrWorkshop } from "react-icons/gr";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -94,7 +90,6 @@ const WorkExperience = () => {
         {
           techname: "Express js",
         },
-        
       ],
     },
   ];
@@ -118,7 +113,7 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container" id="workexperience">
       <div className="section-title">
         <Flip left>
           <h5>Work-Experience</h5>
@@ -134,7 +129,7 @@ const WorkExperience = () => {
             date={item.year}
             dateClassName="date"
             iconStyle={{ background: colors[index], color: "#fff" }}
-            icon={<FcNightPortrait />}
+            icon={<GrWorkshop color="white"/>}
           >
             <h3 className="vertical-timeline-element-titles">{item.name}</h3>
             <h4 className="vertical-timeline-element-subtitles">
