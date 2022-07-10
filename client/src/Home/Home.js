@@ -1,27 +1,26 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./home.css";
 import Typewriter from "typewriter-effect";
 import Fade from "react-reveal/Fade";
-import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
 
-const Home = () => {
-
+const Home = ({ toggleTheme, theme }) => {
   return (
-    <>
+
       <div className="container-fluid home" id="home">
 
-        {/* <div className="theme-change" onClick={() => handleChangeTheme()}>
-        {theme === "light" ? (
-          <p>
-            <BsMoonStarsFill size={40} />
-          </p>
-        ) : (
-          <p className="theme-icon">
-            <BsFillSunFill size={40} />
-          </p>
-        )}
-      </div> */}
+        <div className="theme-chang" onClick={() => toggleTheme()}>
+          {theme === "light" ? (
+            <p className="theme-iconss">
+              <BsFillMoonStarsFill size={40} />
+            </p>
+          ) : (
+            <p className="theme-icon">
+              <BsFillSunFill size={40} />
+            </p>
+          )}
+        </div>
 
         <Fade left>
           <div className="container home-content">
@@ -58,8 +57,6 @@ const Home = () => {
           </div>
         </Fade>
       </div>
-
-    </>
   );
 };
 

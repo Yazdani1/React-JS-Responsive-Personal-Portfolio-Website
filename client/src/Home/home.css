@@ -49,7 +49,7 @@
 }
 
 
-.theme-change{
+.theme-chang {
     justify-content: center;
     height: 50px;
     width: 50px;
@@ -79,7 +79,7 @@
 
     animation: rotation infinite 5s linear;
 
- } 
+ }  
 
  @keyframes rotation {
     from{

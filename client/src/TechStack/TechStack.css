@@ -14,6 +14,11 @@
   .section-title h5 {
     text-align: center;
   }
+
+  #dark .section-title h5 {
+    text-align: center;
+    color: white;
+  }
   
   .line {
     display: block;

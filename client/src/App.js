@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import Sidebar from "./Sidebar/Sidebar";
 import About from "./About/About";
 import TechStack from "./TechStack/TechStack";
@@ -11,21 +11,29 @@ import "./App.css";
 import ScrollToTop from "react-scroll-to-top";
 import WorkExperience from "./WorkExperience/WorkExperience";
 import Education from "./Education/Education";
+export const ThemeContext = createContext(null);
 
 const App = () => {
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
+
   return (
-    <div>
-      <NavbarMobile />
-      <Sidebar />
-      <About />
-      <WorkExperience />
-      <TechStack />
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div id={theme}>
+        <NavbarMobile />
+        <Sidebar toggleTheme={toggleTheme} theme={theme} />
+        <About />
+        <WorkExperience />
+        <TechStack />
 
-      <Education />
-      <Projects />
-      <Feedback />
+        <Education />
+        <Projects />
+        <Feedback />
 
-      <Contact />
+        <Contact />
+      </div>
 
       <ScrollToTop
         smooth
@@ -34,7 +42,7 @@ const App = () => {
         width="20"
         style={{ borderRadius: "90px", backgroundColor: "#38004c" }}
       />
-    </div>
+    </ThemeContext.Provider>
   );
 };
 

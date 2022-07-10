@@ -3,7 +3,8 @@ import "./sidebar.css";
 import Home from "../Home/Home";
 import SidebarList from "./SidebarList";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-const Navbar = () => {
+
+const Navbar = ({ toggleTheme, theme }) => {
   const [expandSidebar, setExpandSidebar] = useState(true);
 
   const handleClick = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
 
       </div>
       <div className="container">
-        <Home />
+        <Home toggleTheme={toggleTheme} theme={theme}/>
       </div>
     </div>
   );

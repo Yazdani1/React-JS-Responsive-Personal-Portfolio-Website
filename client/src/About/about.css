@@ -15,7 +15,7 @@ margin-top: 50px; */
   #dark .about-section{
     color: white;
   
-  
+    box-shadow: none;
   }
   #dark .about-details{
     background-color: #38004c;
