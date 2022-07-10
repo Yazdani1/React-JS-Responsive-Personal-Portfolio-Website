@@ -10,6 +10,7 @@ import NavbarMobile from "./Sidebar/NavbarMobile";
 import "./App.css";
 import ScrollToTop from "react-scroll-to-top";
 import WorkExperience from "./WorkExperience/WorkExperience";
+import Education from "./Education/Education";
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
       <About />
       <WorkExperience />
       <TechStack />
+
+      <Education />
       <Projects />
       <Feedback />
 
