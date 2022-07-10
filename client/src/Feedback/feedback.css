@@ -57,6 +57,7 @@
   margin-top: -30px;
   justify-content: center;
   align-items: center;
+  border: 5px solid yellow;
 }
 
 .slick-prev:before{

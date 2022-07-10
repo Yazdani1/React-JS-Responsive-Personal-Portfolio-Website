@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./sidebarlist.css";
 import {
   FcNightPortrait,
@@ -10,12 +10,14 @@ import {
 } from "react-icons/fc";
 import { MdBiotech } from "react-icons/md";
 import { FiSlack } from "react-icons/fi";
-
 import { Link } from "react-scroll";
 
 const SidebarList = ({ expandSidebar }) => {
+
+
   return (
-    <>
+    <div>       
+
       {expandSidebar ? (
         <div className="navbar-items">
           <div className="sidebar-profile-pic">
@@ -108,6 +110,7 @@ const SidebarList = ({ expandSidebar }) => {
       ) : (
         <div className="navbar-items-only-icons">
           <ul>
+
             <li className="nav-item">
               <Link
                 to="home"
@@ -168,7 +171,7 @@ const SidebarList = ({ expandSidebar }) => {
               </Link>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item" >
               <Link
                 to="contact"
                 spy={true}
@@ -182,7 +185,8 @@ const SidebarList = ({ expandSidebar }) => {
           </ul>
         </div>
       )}
-    </>
+
+    </div>
   );
 };
 

@@ -8,6 +8,7 @@ import Feedback from "./Feedback/Feedback";
 import Projects from "./Projects/Projects";
 import NavbarMobile from "./Sidebar/NavbarMobile";
 import "./App.css";
+import ScrollToTop from "react-scroll-to-top";
 
 const App = () => {
   return (
@@ -20,6 +21,14 @@ const App = () => {
       <Feedback />
 
       <Contact />
+
+      <ScrollToTop
+        smooth
+        color="white"
+        height="20"
+        width="20"
+        style={{ borderRadius: "90px", backgroundColor: "#38004c", }}
+      />
     </div>
   );
 };

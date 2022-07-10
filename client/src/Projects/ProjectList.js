@@ -23,8 +23,9 @@ const ProjectList = ({
 
   return (
     <div className="project-list" onClick={handleClick} 
-    onMouseLeave={() => setShow(false)}
-    onMouseEnter={() => setShow(true)}>
+    // onMouseLeave={() => setShow(false)}
+    // onMouseEnter={() => setShow(true)}
+    >
       <div className="title-with-dropdown">
         <h5>{name}</h5>
         <p>{show ? <FcCollapse size={20} /> : <FcExpand size={20} />}</p>

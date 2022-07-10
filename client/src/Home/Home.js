@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./home.css";
 import Typewriter from "typewriter-effect";
 import Fade from "react-reveal/Fade";
@@ -6,9 +6,11 @@ import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 const Home = () => {
+
   return (
     <>
       <div className="container-fluid home" id="home">
+
         {/* <div className="theme-change" onClick={() => handleChangeTheme()}>
         {theme === "light" ? (
           <p>
@@ -56,6 +58,7 @@ const Home = () => {
           </div>
         </Fade>
       </div>
+
     </>
   );
 };

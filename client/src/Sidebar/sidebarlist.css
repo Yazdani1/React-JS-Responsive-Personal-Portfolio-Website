@@ -39,6 +39,7 @@
   border-left: 2px solid yellow;
   color: yellow;
 
+
 }
 
 .sidebar-profile-pic img{
@@ -51,5 +52,5 @@
     display: flex;
     vertical-align: middle;
     margin: 0 auto;
-    border: 3px solid white;
+    border: 3px solid yellow;
 }
