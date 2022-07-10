@@ -6,19 +6,20 @@ import Tools from "./Tools/Tools";
 import Contact from "./Contact/Contact";
 import Feedback from "./Feedback/Feedback";
 import Projects from "./Projects/Projects";
+import NavbarMobile from "./Sidebar/NavbarMobile";
 import "./App.css";
 
 const App = () => {
   return (
     <div>
+      <NavbarMobile />
       <Sidebar />
-      <About/>
-      <TechStack/>
-      <Projects/>
-      <Feedback/>
+      <About />
+      <TechStack />
+      <Projects />
+      <Feedback />
 
-      <Contact/>
-
+      <Contact />
     </div>
   );
 };

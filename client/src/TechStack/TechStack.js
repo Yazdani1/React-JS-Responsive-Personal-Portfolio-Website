@@ -192,13 +192,15 @@ const TechStack = () => {
             </div>
           </Fade>
         ))}
-
-        {visible >= data.length ? null : (
-          <div className="load-more-button" onClick={loadMore}>
-            Load More
-          </div>
-        )}
       </div>
+
+      {visible >= data.length ? null : (
+        
+          <span className="load-more-button" onClick={loadMore}>
+            Load More
+          </span>
+   
+        )}
     </div>
   );
 };

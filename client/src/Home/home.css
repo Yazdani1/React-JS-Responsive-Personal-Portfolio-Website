@@ -29,9 +29,9 @@
 .view-details-home-button{
     background-color: green;
     text-align: center;
-    width: 10%;
+    width: fit-content;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 90px;
     cursor: pointer;
     color: white;
     margin-top: 10px;
