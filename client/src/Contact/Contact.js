@@ -33,14 +33,14 @@ const Contact = () => {
                 </div>
 
                 <div className="contact-form">
-                  <label className="form-lebel">Service you need</label>
+                  <label className="form-lebel">Job Types</label>
                   <select className="custom-select">
-                    <option>Web Development</option>
-                    <option>Mobile App Development</option>
+                    <option>Full-time</option>
+                    <option>Working Student</option>
 
-                    <option>UI/UX Design</option>
+                    <option>Part-time</option>
 
-                    <option>Digital Marketing</option>
+                    <option>Contract</option>
                   </select>
                 </div>
 
