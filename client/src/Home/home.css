@@ -26,10 +26,10 @@
     color: #fff;
 
 }
-.view-details-home-button{
+.hire-me-button{
     background-color: green;
     text-align: center;
-    width: fit-content;
+    width: 180px;
     padding: 10px;
     border-radius: 90px;
     cursor: pointer;
@@ -37,10 +37,10 @@
     margin-top: 10px;
     border: 2px solid white;
 }
-.view-details-home-button:hover{
+.hire-me-button:hover{
     background-color: white;
     text-align: center;
-    width: 10%;
+    width: 250px;
     color: black;
     padding: 10px;
     border-radius: 30px;
@@ -49,11 +49,11 @@
 }
 
 
-.theme-chang {
+.theme-change {
     justify-content: center;
     height: 50px;
     width: 50px;
-    background-color: #cd5c5c;
+    background-color: #001CCE;
     right: 0;
     margin-right: 10px;
     text-align: center;

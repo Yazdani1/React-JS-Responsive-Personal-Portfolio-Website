@@ -7,56 +7,52 @@ import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
 
 const Home = ({ toggleTheme, theme }) => {
   return (
-
-      <div className="container-fluid home" id="home">
-
-        <div className="theme-chang" onClick={() => toggleTheme()}>
-          {theme === "light" ? (
-            <p className="theme-iconss">
-              <BsFillMoonStarsFill size={40} />
-            </p>
-          ) : (
-            <p className="theme-icon">
-              <BsFillSunFill size={40} />
-            </p>
-          )}
-        </div>
-
-        <Fade left>
-          <div className="container home-content">
-            <h1>Hi I'm</h1>
-            <h2>
-              <Typewriter
-                options={{
-                  strings: [
-                    "Web Development",
-                    "Mobile App Development",
-                    "UI/UX Design",
-                    "Product Marketing",
-                    "Digital Marketing",
-                    "Customer Service",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  delay: 5,
-                }}
-              />
-            </h2>
-
-            <span className="view-details-home-button">
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={100}
-              >
-                Hire me
-              </Link>
-            </span>
-          </div>
-        </Fade>
+    <div className="container-fluid home" id="home">
+      <div className="theme-change" onClick={() => toggleTheme()}>
+        {theme === "light" ? (
+          <p className="theme-iconss">
+            <BsFillMoonStarsFill size={40} />
+          </p>
+        ) : (
+          <p className="theme-icon">
+            <BsFillSunFill size={40} />
+          </p>
+        )}
       </div>
+
+      <Fade left>
+        <div className="container home-content">
+          <h1>Hi I'm</h1>
+          <h2>
+            <Typewriter
+              options={{
+                strings: [
+                  "Web Development",
+                  "Mobile App Development",
+                  "UI/UX Design",
+                  "Product Marketing",
+                  "Digital Marketing",
+                  "Customer Service",
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 5,
+              }}
+            />
+          </h2>
+
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={100}
+          >
+            <div className="hire-me-button">Hire me</div>
+          </Link>
+        </div>
+      </Fade>
+    </div>
   );
 };
 

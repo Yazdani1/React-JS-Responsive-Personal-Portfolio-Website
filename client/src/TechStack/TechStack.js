@@ -24,7 +24,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Alexander",
-      position: "Javascript developer",
+      position: "Javascript",
       img: "https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 3,
     },
@@ -32,7 +32,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Charlotte",
-      position: "Node js developer",
+      position: "Node js",
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 4,
     },
@@ -40,7 +40,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Emily",
-      position: "Nuxt js developer",
+      position: "Nuxt js",
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 5,
     },
@@ -48,7 +48,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Jayden",
-      position: "Nuxt js developer",
+      position: "Nuxt js",
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 6,
     },
@@ -56,7 +56,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Elizabeth",
-      position: "Nuxt js developer",
+      position: "Vue js ",
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 7,
     },
@@ -64,7 +64,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Jacob",
-      position: "Nuxt js developer",
+      position: "Next js ",
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 8,
     },
@@ -72,7 +72,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Michael",
-      position: "Nuxt js developer",
+      position: "Python",
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 9,
     },
@@ -80,7 +80,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Daniel",
-      position: "Nuxt js developer",
+      position: "React JS",
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 10,
     },
@@ -88,7 +88,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Anthony",
-      position: "Nuxt js developer",
+      position: "Bootstrap",
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 11,
     },
@@ -96,7 +96,7 @@ const TechStack = () => {
       content:
         "It is not every day that you come across a passionate and trustworthy financial advisor",
       name: "Aiden",
-      position: "Nuxt js developer",
+      position: "CSS",
       img: "https://images.pexels.com/photos/3608039/pexels-photo-3608039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       id: 12,
     },

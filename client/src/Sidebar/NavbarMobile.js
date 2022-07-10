@@ -32,7 +32,6 @@ const NavbarMobile = ({ toggleTheme, theme }) => {
 
       {open ? (
         <div className="mobile-nav">
-          
           <ul>
             <li className="nav-item-mobile">
               <Link
@@ -60,8 +59,7 @@ const NavbarMobile = ({ toggleTheme, theme }) => {
               </Link>
             </li>
 
-            
-            <li className="nav-item">
+            <li className="nav-item-mobile">
               <Link
                 to="workexperience"
                 spy={true}
@@ -87,7 +85,6 @@ const NavbarMobile = ({ toggleTheme, theme }) => {
               </Link>
             </li>
 
-
             <li className="nav-item-mobile">
               <Link
                 to="education"
@@ -96,7 +93,7 @@ const NavbarMobile = ({ toggleTheme, theme }) => {
                 offset={-100}
                 duration={100}
               >
-                <MdCastForEducation size={25} color="yellow"/>
+                <MdCastForEducation size={25} color="yellow" />
                 Education
               </Link>
             </li>
@@ -139,8 +136,11 @@ const NavbarMobile = ({ toggleTheme, theme }) => {
                 Contact
               </Link>
             </li>
-          </ul>
 
+            <li className="nav-item-mobile">
+              <ReactSwitch onChange={toggleTheme} checked={theme === "light"} />
+            </li>
+          </ul>
         </div>
       ) : null}
     </div>

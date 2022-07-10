@@ -2,6 +2,10 @@
   color: black;
 }
 
+#dark .date{
+  color: white;
+}
+
 .icon-style {
   background-color: rgb(217, 252, 17);
 }
