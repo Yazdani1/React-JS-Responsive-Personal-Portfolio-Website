@@ -1,0 +1,23 @@
+.date {
+  color: black;
+}
+
+.icon-style {
+  background-color: rgb(217, 252, 17);
+}
+
+
+
+
+.tech-used-at-work p{
+    background-color: black;
+    border-radius: 90px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+.tech-used-at-work p:hover{
+    background-color: brown;
+    cursor: pointer;
+}
