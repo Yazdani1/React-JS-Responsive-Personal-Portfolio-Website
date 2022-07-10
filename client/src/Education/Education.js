@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import "./Education.css";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
 import { FcNightPortrait } from "react-icons/fc";
 import { MdCastForEducation } from "react-icons/md";
-
 
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import "./Education.css";
 
 const Education = () => {
   const data = [
@@ -68,7 +67,7 @@ const Education = () => {
         </Flip>
       </div>
 
-      <VerticalTimeline>
+      <VerticalTimeline lineColor="#FF8042">
         {data.map((item, index) => (
           <VerticalTimelineElement
             contentStyle={{ background: colors[index], color: "#fff" }}
