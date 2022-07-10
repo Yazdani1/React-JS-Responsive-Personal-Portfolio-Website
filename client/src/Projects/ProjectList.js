@@ -37,6 +37,13 @@ const ProjectList = ({
         <span>{tech4}</span>
       </div>
 
+      <div className="tech-stack-mobile-view">
+        <p>{tech1}</p>
+        <p>{tech2}</p>
+        <p>{tech3}</p>
+        <p>{tech4}</p>
+      </div>
+
       <div className="live-demo-button">
         <p>
           <a target="_" href={projectlink}>

@@ -16,9 +16,39 @@
 
 
 .tech-stack {
+    display: flex;
 
     margin-top: 20px;
 }
+
+
+
+@media (max-width: 1000px) {
+    .tech-stack{
+      display: none;
+      
+    }
+    .tech-stack-mobile-view p{
+  
+
+        background-color: black;
+        color: white;
+        border-radius: 90px;
+        padding: 8px;
+        margin-left: 5px;
+        width: fit-content;
+        
+      }
+  }
+
+  @media (min-width: 950px) {
+    .tech-stack-mobile-view{
+      display: none;
+      
+    }
+  }
+
+  
 
 .tech-stack span{
     background-color: black;

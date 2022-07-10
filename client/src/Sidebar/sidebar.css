@@ -10,9 +10,17 @@
     height: 100vh;
     position: fixed;
     background-color: #030303da;
-
-
 }
+
+
+@media (max-width: 1000px) {
+    .sidebar{
+      display: none;
+    }
+  }
+  
+
+
 .sidebar-expand{
     width: 230px;
 }
