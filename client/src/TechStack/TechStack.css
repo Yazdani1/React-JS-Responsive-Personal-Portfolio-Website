@@ -106,9 +106,9 @@
   }
   
   
-  .load-more-button {
+  .load-teach-stack-button{
     background-color: #38004c;
-    width: auto;
+    width: 150px;
     padding: 10px;
     color: white;
     text-align: center;

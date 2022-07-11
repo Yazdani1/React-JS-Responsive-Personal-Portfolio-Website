@@ -196,7 +196,7 @@ const TechStack = () => {
 
       {visible >= data.length ? null : (
         
-          <span className="load-more-button" onClick={loadMore}>
+          <span className="load-teach-stack-button" onClick={loadMore}>
             Load More
           </span>
    
