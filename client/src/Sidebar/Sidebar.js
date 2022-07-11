@@ -5,6 +5,7 @@ import SidebarList from "./SidebarList";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const Navbar = ({ toggleTheme, theme }) => {
+  
   const [expandSidebar, setExpandSidebar] = useState(true);
 
   const handleClick = () => {

@@ -10,7 +10,8 @@ const Contact = () => {
         <Fade bottom>
           <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5">
             <div className="image-class">
-              <img src="https://images.pexels.com/photos/326519/pexels-photo-326519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+              <img src="https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
+              {/* <img src="https://images.pexels.com/photos/326519/pexels-photo-326519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /> */}
             </div>
           </div>
         </Fade>
