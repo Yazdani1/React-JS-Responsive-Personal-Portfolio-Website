@@ -8,8 +8,12 @@ import {
   FcFactory,
   FcSalesPerformance,
 } from "react-icons/fc";
+
+
 import { MdBiotech } from "react-icons/md";
 import { FiSlack } from "react-icons/fi";
+
+
 import { Link } from "react-scroll";
 import profile from "../images/a.jpg";
 
