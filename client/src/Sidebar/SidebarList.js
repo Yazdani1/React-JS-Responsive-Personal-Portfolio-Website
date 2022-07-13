@@ -11,6 +11,7 @@ import {
 import { MdBiotech } from "react-icons/md";
 import { FiSlack } from "react-icons/fi";
 import { Link } from "react-scroll";
+import profile from "../images/a.jpg";
 
 import { MdCastForEducation } from "react-icons/md";
 
@@ -21,7 +22,8 @@ const SidebarList = ({ expandSidebar }) => {
         <div className="navbar-items">
           <div className="sidebar-profile-pic">
             <img
-              src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src={profile}
+              // src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="about_image"
             />
           </div>
@@ -79,7 +81,6 @@ const SidebarList = ({ expandSidebar }) => {
               </Link>
             </li>
 
-
             <li className="nav-item">
               <Link
                 to="education"
@@ -88,7 +89,7 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-                <MdCastForEducation size={25} color="yellow"/>
+                <MdCastForEducation size={25} color="yellow" />
                 Education
               </Link>
             </li>
@@ -184,7 +185,6 @@ const SidebarList = ({ expandSidebar }) => {
               </Link>
             </li>
 
-
             <li className="nav-item">
               <Link
                 to="education"
@@ -193,7 +193,7 @@ const SidebarList = ({ expandSidebar }) => {
                 offset={-100}
                 duration={100}
               >
-                <MdCastForEducation size={25} color="yellow"/>
+                <MdCastForEducation size={25} color="yellow" />
               </Link>
             </li>
 

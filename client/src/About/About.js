@@ -2,6 +2,7 @@ import React from "react";
 import "./about.css";
 import Fade from "react-reveal/Fade";
 import { FcSlrBackSide, FcWorkflow, FcShop } from "react-icons/fc";
+import profile from "../images/a.jpg";
 
 const About = () => {
   return (
@@ -11,7 +12,8 @@ const About = () => {
           <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <div className="about-image">
               <img
-                src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src={profile}
+                // src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="about_image"
               />
             </div>
