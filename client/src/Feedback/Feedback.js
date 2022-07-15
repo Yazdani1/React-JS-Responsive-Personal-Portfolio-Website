@@ -134,6 +134,7 @@ const Feedback = () => {
 
   return (
     <div className="container feedback-slider" id="testimonial">
+      
      <div className="section-title">
         <Flip left>
           <h5>Testimonial</h5>
