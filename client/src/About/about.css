@@ -42,10 +42,14 @@
     padding: 20px;
   }
 
+  .about-details p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
   .about-title h5 {
     text-align: center;
   }
-  
+
   .line {
     display: block;
     width: 70px;
