@@ -12,7 +12,6 @@ import {
   FcSalesPerformance,
 } from "react-icons/fc";
 import { MdBiotech } from "react-icons/md";
-import { FiSlack } from "react-icons/fi";
 import { MdCastForEducation } from "react-icons/md";
 
 const NavbarMobile = ({ toggleTheme, theme }) => {

@@ -11,7 +11,6 @@ import {
 
 
 import { MdBiotech } from "react-icons/md";
-import { FiSlack } from "react-icons/fi";
 
 
 import { Link } from "react-scroll";

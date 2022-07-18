@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./projects.css";
 import { FcExpand, FcCollapse } from "react-icons/fc";
-import Fade from "react-reveal/Fade";
 
 const ProjectList = ({
   name,

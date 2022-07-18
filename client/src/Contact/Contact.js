@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./contact.css";
 import { IoIosSend } from "react-icons/io";
 import Fade from "react-reveal/Fade";
-import Flip from "react-reveal/Flip";
 const Contact = () => {
   return (
     <div className="container contact-section" id="contact">
