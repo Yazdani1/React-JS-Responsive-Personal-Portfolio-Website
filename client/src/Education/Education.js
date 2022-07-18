@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
-import { FcNightPortrait } from "react-icons/fc";
 import { MdCastForEducation } from "react-icons/md";
 
 import {

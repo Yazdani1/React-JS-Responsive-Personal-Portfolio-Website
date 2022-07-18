@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./WorkExperience.css";
-import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
-import { FcNightPortrait } from "react-icons/fc";
 
 import { GrWorkshop } from "react-icons/gr";
 
